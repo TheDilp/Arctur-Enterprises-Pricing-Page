@@ -1,5 +1,6 @@
 :root {
-    --dark-card-bg: #212121;
+    --dark-card-bg: #121212;
+    --light-card-bg: white;
     --details-font: 'Montserrat', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     --title-font: 'Roboto', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     --card-shadow-darkmode: 0 0.25rem 0.5rem black;
@@ -32,14 +33,14 @@ nav .navlist {
 .navlistItem a {
     text-decoration: none;
     color: #131515;
-    border: 0 solid white;
+    border-bottom: 1px solid #121212;
 
 }
 
 .navlistItem a:hover {
     border-bottom: 2px solid #3936F3;
     border-width: 100%;
-    transition: border-color 0.1s linear;
+    transition: border 0.1s linear;
     border-width: 100%;
 }
 
@@ -332,15 +333,18 @@ nav .navlist {
         color: white;
     }
 
-    .card:not(#card2),
-    #card2 {
+    .card {
         box-shadow: var(--card-shadow-darkmode);
-        background-color: white;
-        color: black;
+        background-color: #212121 !important;
+        color: white;
     }
 }
 
 @media (prefers-color-scheme: light) {
+    .navlistItem a {
+        border-bottom: white solid 1px;
+    }
+
     .card {
         box-shadow: var(--card-shadow-lightmode);
     }
