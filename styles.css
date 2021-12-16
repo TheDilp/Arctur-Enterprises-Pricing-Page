@@ -323,12 +323,20 @@ nav .navlist {
 
 @media (prefers-color-scheme: dark) {
 
-    #card1,
-    #card2,
-    #card3 {
+    body {
+        background-color: #121212;
+    }
+
+    .navlistItem a,
+    header {
+        color: white;
+    }
+
+    .card:not(#card2),
+    #card2 {
         box-shadow: var(--card-shadow-darkmode);
         background-color: white;
-        color: black
+        color: black;
     }
 }
 
