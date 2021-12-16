@@ -2,6 +2,8 @@
     --dark-card-bg: #212121;
     --details-font: 'Montserrat', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     --title-font: 'Roboto', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --card-shadow-darkmode: 0 0.25rem 0.5rem black;
+    --card-shadow-lightmode: 0 0.25rem 0.5rem gray;
 
 
 }
@@ -218,7 +220,7 @@ nav .navlist {
 }
 
 .card:not(#card2) .buttonContainer button {
-    margin-top: 1rem;
+    margin-top: 0.12rem;
     width: 50%;
 }
 
