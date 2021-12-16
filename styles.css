@@ -3,8 +3,7 @@
     --details-font: 'Montserrat', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     --title-font: 'Roboto', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     --card-shadow-darkmode: 0 0.25rem 0.5rem black;
-    --card-shadow-lightmode: 0 0.25rem 0.5rem gray;
-
+    --card-shadow-lightmode: 0 0.5rem 1rem rgba(128, 128, 128, 0.55);
 
 }
 
@@ -76,7 +75,6 @@ nav .navlist {
 .card {
     border-radius: 1.5rem;
     text-align: center;
-    box-shadow: 0 0.25rem 0.5rem gray;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
@@ -106,7 +104,6 @@ nav .navlist {
 #card2 {
     order: 1;
     height: 32rem;
-    box-shadow: 0 0.5rem 1rem rgba(128, 128, 128, 0.55);
     background-color: #ffffff;
 }
 
@@ -322,6 +319,16 @@ nav .navlist {
     #card2 {
         flex: 4;
     }
+}
 
+@media (prefers-color-scheme: dark) {
+    .card {
+        box-shadow: var(--card-shadow-darkmode)
+    }
+}
 
+@media (prefers-color-scheme: light) {
+    .card {
+        box-shadow: var(--card-shadow-lightmode);
+    }
 }
