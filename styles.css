@@ -323,7 +323,9 @@ nav .navlist {
 
 @media (prefers-color-scheme: dark) {
     .card {
-        box-shadow: var(--card-shadow-darkmode)
+        box-shadow: var(--card-shadow-darkmode);
+        background-color: white;
+        color: black
     }
 }
 
