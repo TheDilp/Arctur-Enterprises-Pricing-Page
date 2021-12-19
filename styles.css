@@ -334,9 +334,28 @@ nav .navlist {
     }
 
     .card {
-        box-shadow: var(--card-shadow-darkmode);
-        background-color: #212121 !important;
         color: white;
+        box-shadow: var(--card-shadow-darkmode);
+
+    }
+
+    .card:not(#card2) {
+        background-color: #212121 !important;
+    }
+
+    #card2 {
+        background-color: #3936F3;
+    }
+
+
+    #card2 .tagContainer .tag {
+        background-color: #212121;
+    }
+
+
+    #card2 .buttonContainer button {
+        background-color: #212121;
+        border: #212121 solid 1px;
     }
 }
 
